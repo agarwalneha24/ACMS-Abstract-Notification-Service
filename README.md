@@ -144,7 +144,7 @@ FCM Response Handler:
 
 Log Entry is retrieved from the FCM response. It must contain token_id, encrypted_payload, timestamp and status. Once we have created logs-based metrics to monitor our functions, we can create charts and alerts based on these metrics. For example, we could create a chart to visualize latency over time, or create an alert to let you know if a certain error occurs too often.
 
-                                                    TOOLS USED
+TOOLS USED
 
 NPM(Node Package Manager):
 
