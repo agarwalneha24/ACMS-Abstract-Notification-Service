@@ -26,17 +26,21 @@ User device being registered is mapped to their respective client using the clie
 
 Database
 Client Facade maintains tables containing
- User_Schema:
-> Username
-> Device Token
-> Device ID
-> OS Type
-> Client ID
+User_Schema:
+ 
+Username
+Device Token
+Device ID
+OS Type
+Client ID
+
 Client_Schema:
-> Client ID
-> Secret Key
-> Application name
-> Application Description
+
+Client ID
+Secret Key
+Application name
+Application Description
+
 A database has been created to facilitate the storage of this data.
 If the app user deletes the app from the device or the app has not been used for a while, their respective record is marked disabled.
 This project involves use of MongoDB for database management.
