@@ -28,17 +28,17 @@ Database
 Client Facade maintains tables containing
 User_Schema:
  
-Username
-Device Token
-Device ID
-OS Type
+Username,
+Device Token,
+Device ID,
+OS Type,
 Client ID
 
 Client_Schema:
 
-Client ID
-Secret Key
-Application name
+Client ID,
+Secret Key,
+Application name,
 Application Description
 
 A database has been created to facilitate the storage of this data.
@@ -126,7 +126,7 @@ Authentication Procedure:
 Encrypt the resulting data using the authentication token signing key obtained from the developer account.Provider server must include the resulting encrypted data with all  notification requests
 
 
-                                                  ANDROID FIREBASE INTEGRATION
+                                       ANDROID FIREBASE INTEGRATION
 
 Sending Device token and payload to Firebase which will send the notification to respective devices and logging the responses.
 
@@ -144,7 +144,7 @@ FCM Response Handler:
 
 Log Entry is retrieved from the FCM response. It must contain token_id, encrypted_payload, timestamp and status. Once we have created logs-based metrics to monitor our functions, we can create charts and alerts based on these metrics. For example, we could create a chart to visualize latency over time, or create an alert to let you know if a certain error occurs too often.
 
-TOOLS USED
+                                                    TOOLS USED
 
 NPM(Node Package Manager):
 
