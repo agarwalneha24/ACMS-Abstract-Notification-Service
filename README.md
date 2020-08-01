@@ -1,14 +1,6 @@
 # ACMS-Abstract Notification Service
 Abstract Notification Dispatch service for android and ios devices that is capable of notifying a user over all the devices (capped to N) that has been registered with the application. The service is agnostic and highly scalable.
 
-
-                                         ABSTRACT NOTIFICATION SERVICE
-
-
-PROJECT DESCRIPTION 
-
-The Project aims at developing an abstract notification service that is capable of notifying the user on as many devices on which the user has registered with the application.
-
                                          CLIENT FACADE DEVELOPMENT
 
 Maintenance of the record of all the registered user devices and their Token IDs’ corresponding to all user registered applications and facilitate the notification dispatcher with the same.
