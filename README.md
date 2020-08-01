@@ -2,14 +2,14 @@
 Abstract Notification Dispatch service for android and ios devices that is capable of notifying a user over all the devices (capped to N) that has been registered with the application. The service is agnostic and highly scalable.
 
 
-                                                     ABSTRACT NOTIFICATION SERVICE
+                                         ABSTRACT NOTIFICATION SERVICE
 
 
 PROJECT DESCRIPTION 
 
 The Project aims at developing an abstract notification service that is capable of notifying the user on as many devices on which the user has registered with the application.
 
-                                                      CLIENT FACADE DEVELOPMENT
+                                         CLIENT FACADE DEVELOPMENT
 
 Maintenance of the record of all the registered user devices and their Token IDs’ corresponding to all user registered applications and facilitate the notification dispatcher with the same.
 
@@ -49,7 +49,7 @@ A database has been created to facilitate the storage of this data.
 If the app user deletes the app from the device or the app has not been used for a while, their respective record is marked disabled.
 This project involves use of MongoDB for database management.
 
-                                                        NOTIFICATION DISPATCHER
+                                           NOTIFICATION DISPATCHER
 
 
 Receiving notification message along with token Ids and usernames from client facade and hitting integrators with it.
@@ -78,7 +78,7 @@ Response reader:
 If the notifications couldn’t be successfully sent to the device then an error statement will be returned to the specific integrator. It will store the corresponding device token in a queue format. Notification dispatcher will read this and mark this token Id as disabled in both the databases maintained by integrators and client facade.
 Queue Software used here is Rabbitmq.
 
-                                                        APNS INTEGRATION
+                                       APNS INTEGRATION
 
 Sending Device token and payload to APNs which will send the notification to respective devices and logging the APNs responses.
 
