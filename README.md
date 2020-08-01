@@ -1,7 +1,7 @@
 # ACMS-Abstract Notification Service
 Abstract Notification Dispatch service for android and ios devices that is capable of notifying a user over all the devices (capped to N) that has been registered with the application. The service is agnostic and highly scalable.
 
-                                         CLIENT FACADE DEVELOPMENT
+                                            CLIENT FACADE DEVELOPMENT
 
 Maintenance of the record of all the registered user devices and their Token IDs’ corresponding to all user registered applications and facilitate the notification dispatcher with the same.
 
@@ -74,7 +74,7 @@ Response reader:
 If the notifications couldn’t be successfully sent to the device then an error statement will be returned to the specific integrator. It will store the corresponding device token in a queue format. Notification dispatcher will read this and mark this token Id as disabled in both the databases maintained by integrators and client facade.
 Queue Software used here is Rabbitmq.
 
-                                       APNS INTEGRATION
+                                          APNS INTEGRATION
 
 Sending Device token and payload to APNs which will send the notification to respective devices and logging the APNs responses.
 
@@ -126,7 +126,7 @@ Authentication Procedure:
 Encrypt the resulting data using the authentication token signing key obtained from the developer account.Provider server must include the resulting encrypted data with all  notification requests
 
 
-                                       ANDROID FIREBASE INTEGRATION
+                                          ANDROID FIREBASE INTEGRATION
 
 Sending Device token and payload to Firebase which will send the notification to respective devices and logging the responses.
 
@@ -144,7 +144,7 @@ FCM Response Handler:
 
 Log Entry is retrieved from the FCM response. It must contain token_id, encrypted_payload, timestamp and status. Once we have created logs-based metrics to monitor our functions, we can create charts and alerts based on these metrics. For example, we could create a chart to visualize latency over time, or create an alert to let you know if a certain error occurs too often.
 
-TOOLS USED
+                                              TOOLS USED
 
 NPM(Node Package Manager):
 
